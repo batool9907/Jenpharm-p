@@ -1,0 +1,123 @@
+<!-- CLINICAL DATA & 24H RETENTION SECTION -->
+<section class="section section-clinical bg-surface-low" id="clinical-stats">
+  <div class="container">
+    <div class="clinical-grid">
+      <!-- Left: Clinical Statistics -->
+      <div class="clinical-stats-box">
+        <span class="section-eyebrow">{{ section.settings.eyebrow }}</span>
+        <h2 class="section-title text-left">{{ section.settings.title }}</h2>
+        <p class="section-subtitle text-left">
+          {{ section.settings.subtitle }}
+        </p>
+
+        <div class="hydration-stats-container" id="hydration-stats">
+          <!-- Progress Bar 1 -->
+          <div class="stat-item">
+            <div class="stat-header">
+              <span class="stat-label"><span class="material-symbols-outlined">water_drop</span> Epidermal Hydration Boost</span>
+              <span class="stat-value" data-target="98">98%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 0%;" data-fill="98%"></div>
+            </div>
+            <small class="stat-note">Measured via Corneometer after 24 hours of single application</small>
+          </div>
+
+          <!-- Progress Bar 2 -->
+          <div class="stat-item">
+            <div class="stat-header">
+              <span class="stat-label"><span class="material-symbols-outlined">shield</span> Skin Barrier Strength Improvement</span>
+              <span class="stat-value" data-target="84">84%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 0%;" data-fill="84%"></div>
+            </div>
+            <small class="stat-note">Reduction in Transepidermal Water Loss (TEWL)</small>
+          </div>
+
+          <!-- Progress Bar 3 -->
+          <div class="stat-item">
+            <div class="stat-header">
+              <span class="stat-label"><span class="material-symbols-outlined">tune</span> Sebum & Shine Regulation</span>
+              <span class="stat-value" data-target="92">92%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 0%;" data-fill="92%"></div>
+            </div>
+            <small class="stat-note">Reported zero greasy residue after 8 hours of wear</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Clinical Benefit Cards -->
+      <div class="clinical-cards-col">
+        <div class="clinical-feature-card">
+          <div class="feature-icon bg-primary-light">
+            <span class="material-symbols-outlined text-primary">texture</span>
+          </div>
+          <div>
+            <h4 class="feature-title">Ultra-Light Weightless Texture</h4>
+            <p class="feature-desc">
+              Fast-absorbing gel-cream emulsion that melts instantly into the skin. Leaves a silky, breathable matte canvas that works seamlessly under daily makeup or sunscreen layering.
+            </p>
+          </div>
+        </div>
+
+        <div class="clinical-feature-card offset-card">
+          <div class="feature-icon bg-secondary-light">
+            <span class="material-symbols-outlined text-secondary">spa</span>
+          </div>
+          <div>
+            <h4 class="feature-title">Soothes Sensitivity & Redness</h4>
+            <p class="feature-desc">
+              100% fragrance-free, paraben-free, and hypoallergenic formula designed specifically for easily irritated, reactive, rosacea, and eczema-prone complexions.
+            </p>
+          </div>
+        </div>
+
+        <div class="clinical-feature-card">
+          <div class="feature-icon bg-tertiary-light">
+            <span class="material-symbols-outlined text-tertiary">health_and_safety</span>
+          </div>
+          <div>
+            <h4 class="feature-title">Clinical Purity Guarantee</h4>
+            <p class="feature-desc">
+              Manufactured in an ISO 22716 & cGMP certified pharmaceutical facility with third-party batch testing for safety, potency, and sterile integrity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Clinical Data & Stats",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow Text",
+      "default": "Dermatologically Measured Data"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "24-Hour Active Moisture Retention"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "In a 4-week double-blind clinical trial with 250 participants with sensitive and acne-prone skin, Dermive demonstrated measurable barrier restoration and all-day hydration."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Clinical Data & Stats"
+    }
+  ]
+}
+{% endschema %}

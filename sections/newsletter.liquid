@@ -1,0 +1,56 @@
+<!-- NEWSLETTER / CLINICAL CARE CIRCLE -->
+<section class="section-newsletter" id="newsletter">
+  <div class="container newsletter-container">
+    <div class="newsletter-text">
+      <span class="newsletter-badge">{{ section.settings.badge_text }}</span>
+      <h2 class="newsletter-title">{{ section.settings.title }}</h2>
+      <p class="newsletter-desc">
+        {{ section.settings.description }}
+      </p>
+    </div>
+    <div class="newsletter-form-wrapper">
+      <form id="newsletter-form" class="newsletter-form">
+        <div class="input-with-icon">
+          <span class="material-symbols-outlined">mail</span>
+          <input type="email" id="newsletter-email" placeholder="Enter your email address" required>
+        </div>
+        <button type="submit" class="btn btn-white">
+          <span>Claim 15% Off</span>
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </button>
+      </form>
+      <small class="newsletter-disclaimer">Instant coupon code generated upon subscribing. No spam, ever.</small>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Newsletter Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge Text",
+      "default": "Exclusive Privilege"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Join the Clinical Care Circle"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Get 15% OFF your first order and receive science-backed skincare regimens, batch release updates, and dermatologist guides directly to your inbox."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Newsletter Section"
+    }
+  ]
+}
+{% endschema %}

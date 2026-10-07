@@ -1,0 +1,76 @@
+<!-- STICKY HEADER -->
+<header class="header" id="main-header">
+  <div class="container header-container">
+    <!-- Brand Logo -->
+    <a href="{{ routes.root_url }}" class="brand-logo">
+      <div class="brand-symbol">
+        <span class="material-symbols-outlined">science</span>
+      </div>
+      <div class="brand-text">
+        <span class="brand-title">{{ section.settings.logo_title }}</span>
+        <span class="brand-subtitle">{{ section.settings.logo_subtitle }}</span>
+      </div>
+    </a>
+
+    <!-- Desktop Nav Links -->
+    <nav class="nav-links" id="nav-menu">
+      <a href="{{ routes.root_url }}#hero" class="nav-link active">Home</a>
+      <a href="{{ routes.root_url }}#technology" class="nav-link">Molecular Tech</a>
+      <a href="{{ routes.root_url }}#clinical-stats" class="nav-link">Clinical Data</a>
+      <a href="{{ routes.root_url }}#shop" class="nav-link">Shop All</a>
+      <a href="{{ routes.root_url }}#routine-builder" class="nav-link">Skin Quiz</a>
+      <a href="{{ routes.root_url }}#reviews" class="nav-link">Results</a>
+      <a href="{{ routes.root_url }}#faq" class="nav-link">FAQ</a>
+    </nav>
+
+    <!-- Search & Actions -->
+    <div class="header-actions">
+      <!-- Search Bar -->
+      <div class="search-box">
+        <input type="text" id="global-search-input" placeholder="Search clinical formulas..." autocomplete="off">
+        <button class="search-btn" id="search-toggle-btn" aria-label="Search">
+          <span class="material-symbols-outlined">search</span>
+        </button>
+        <!-- Search Dropdown Results -->
+        <div class="search-dropdown" id="search-results-dropdown"></div>
+      </div>
+
+      <!-- Wishlist Button -->
+      <button class="action-btn" id="wishlist-btn" aria-label="Saved Items" title="Saved Items">
+        <span class="material-symbols-outlined">favorite</span>
+        <span class="badge" id="wishlist-badge">0</span>
+      </button>
+
+      <!-- Cart Button -->
+      <button class="action-btn cart-trigger" id="cart-drawer-toggle" aria-label="View Cart" title="View Cart">
+        <span class="material-symbols-outlined">shopping_bag</span>
+        <span class="badge" id="cart-badge">{{ cart.item_count }}</span>
+      </button>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="action-btn mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Navigation">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+      "type": "text",
+      "id": "logo_title",
+      "label": "Store Name",
+      "default": "Jenpharm Dermive"
+    },
+    {
+      "type": "text",
+      "id": "logo_subtitle",
+      "label": "Store Subtitle",
+      "default": "Clinical Precision"
+    }
+  ]
+}
+{% endschema %}

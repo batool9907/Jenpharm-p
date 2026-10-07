@@ -1,0 +1,144 @@
+<!-- HERO SECTION -->
+<section class="hero-section" id="hero">
+  <div class="hero-bg-overlay">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEnN47piI6nebw3FRZIajqzGNcqjl6Xnr_LSty7U_-i0igCKhzRg4ODPt-L1fYxBUjaqUG_96unq13gs2RBQcFKvcYyK_6XcrHG3PRMD5M796XyrFuMyz29hOwh_l0_TorpOKYCHYNTkmOxiB6HiXQzBvqDw6NNdd3G7RGQrZ21tiebwoUWvy_h_5kOqY-X3A3zvkB-Bm5RoWJgDTU1yYDV7L98jsQHLOEUaabtN2SiWoyTpgaQ26mE_PKSTpLl7v3Gqh8xuI63Q" alt="Clinical Laboratory Ambient Background" class="hero-bg-img" loading="eager">
+    <div class="hero-gradient-mask"></div>
+  </div>
+
+  <div class="container hero-content-wrapper">
+    <div class="hero-text-col">
+      <div class="clinical-chip pulse-badge">
+        <span class="material-symbols-outlined">verified</span>
+        <span>{{ section.settings.badge_text }}</span>
+      </div>
+
+      <h1 class="hero-headline">
+        {{ section.settings.title_line_1 }} <br>
+        <span class="text-primary-gradient">{{ section.settings.title_line_2 }}</span>
+      </h1>
+
+      <p class="hero-description">
+        {{ section.settings.description }}
+      </p>
+
+      <div class="hero-specs-row">
+        <div class="spec-pill">
+          <span class="material-symbols-outlined">water_drop</span>
+          <span>Ceramide Complex + HA</span>
+        </div>
+        <div class="spec-pill">
+          <span class="material-symbols-outlined">wb_sunny</span>
+          <span>Broad Spectrum SPF 20</span>
+        </div>
+        <div class="spec-pill">
+          <span class="material-symbols-outlined">shield</span>
+          <span>Non-Comedogenic</span>
+        </div>
+      </div>
+
+      <div class="hero-cta-group">
+        <a href="{{ section.settings.button_link }}" class="btn btn-primary btn-lg">
+          <span>{{ section.settings.button_label }}</span>
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+        <button class="btn btn-secondary btn-lg" id="view-clinical-data-btn">
+          <span class="material-symbols-outlined">analytics</span>
+          <span>View Clinical Data</span>
+        </button>
+      </div>
+
+      <!-- Trust Metrics -->
+      <div class="hero-trust-bar">
+        <div class="trust-metric">
+          <strong>4.9/5</strong>
+          <span>12,000+ Reviews</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-metric">
+          <strong>100%</strong>
+          <span>Oil-Free & Matte</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-metric">
+          <strong>24h</strong>
+          <span>Deep Hydration</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Product Visual -->
+    <div class="hero-visual-col">
+      <div class="hero-product-stage">
+        <div class="glow-orb"></div>
+        <div class="floating-spec-badge top-right float-anim-1">
+          <span class="material-symbols-outlined">science</span>
+          <div>
+            <small>Active Formula</small>
+            <strong>3 Essential Ceramides</strong>
+          </div>
+        </div>
+        <div class="floating-spec-badge bottom-left float-anim-2">
+          <span class="material-symbols-outlined">check_circle</span>
+          <div>
+            <small>Pore Friendly</small>
+            <strong>Zero Clogging</strong>
+          </div>
+        </div>
+
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCexhfGPpW-Dd1ri6UlAVmRPO9nhcBLOMMsCBTaOU-mgunWP237Mh-UCsTtO0uHiC4TM92q7Z7UEzv5VIOZxbQOA4W4EO05Fs7uO5cxxRc742CPT3C_ptxM97Ytkiuly53WYxhPbatffmDOlbSy264rHujE_efN-FcaDZQ160raUjGJLyV8HE3m6CGgdOBWa87yeWUmCMBokf25pZByLZLV3R4I5i2JHLZbxeY3iAezs7fC3lG9WVt17-peZU9epi6RIg25FKTP4A" alt="Jenpharm Dermive Oil Free Moisturizer SPF 20 Tube Shot" class="hero-product-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SVG WAVE DIVIDER -->
+<div class="wave-divider" aria-hidden="true"></div>
+
+{% schema %}
+{
+  "name": "Hero Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge Text",
+      "default": "Dermatologist Tested & Approved"
+    },
+    {
+      "type": "text",
+      "id": "title_line_1",
+      "label": "Title Line 1",
+      "default": "Oil Free Moisturizer"
+    },
+    {
+      "type": "text",
+      "id": "title_line_2",
+      "label": "Title Line 2",
+      "default": "SPF 20 Protection"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "A weightless formula designed for clinical-grade hydration. Dual-action protection that restores vital ceramides for 24 hours while actively shielding against daily UV damage."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "Shop Now — Rs. 1,450"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link",
+      "default": "/#shop"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Section"
+    }
+  ]
+}
+{% endschema %}

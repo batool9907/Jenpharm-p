@@ -1,0 +1,109 @@
+<!-- REVIEWS & CLINICAL PROOF SECTION -->
+<section class="section section-reviews bg-white" id="reviews">
+  <div class="container">
+    <div class="section-header text-center">
+      <span class="section-eyebrow">{{ section.settings.eyebrow }}</span>
+      <h2 class="section-title">{{ section.settings.title }}</h2>
+      <div class="rating-stars-container">
+        <div class="stars">
+          <span class="material-symbols-outlined star-filled">star</span>
+          <span class="material-symbols-outlined star-filled">star</span>
+          <span class="material-symbols-outlined star-filled">star</span>
+          <span class="material-symbols-outlined star-filled">star</span>
+          <span class="material-symbols-outlined star-filled">star</span>
+        </div>
+        <span class="rating-label">{{ section.settings.rating_text }}</span>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+      <!-- Review 1 -->
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar bg-primary-container-light">S</div>
+          <div class="reviewer-meta">
+            <h4 class="reviewer-name">Sarah J.</h4>
+            <span class="reviewer-tag">Verified Buyer • Oily/Acne-Prone Skin</span>
+          </div>
+          <div class="review-stars">★★★★★</div>
+        </div>
+        <p class="review-text">
+          "Finally found a moisturizer that doesn't break me out! The SPF 20 is a huge plus for my morning routine. The texture is truly invisible and leaves zero white cast on my warm skin tone."
+        </p>
+        <div class="review-verification">
+          <span class="material-symbols-outlined icon-sm">verified</span>
+          <span>Clinical Results Verified</span>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar bg-secondary-container-light">M</div>
+          <div class="reviewer-meta">
+            <h4 class="reviewer-name">Michael R.</h4>
+            <span class="reviewer-tag">Verified Buyer • Combination Skin</span>
+          </div>
+          <div class="review-stars">★★★★★</div>
+        </div>
+        <p class="review-text">
+          "I have oily skin and every other sunscreen leaves me looking like a grease ball by noon. Dermive stays matte all day. Incredible hydration without any pore clogging."
+        </p>
+        <div class="review-verification">
+          <span class="material-symbols-outlined icon-sm">verified</span>
+          <span>Clinical Results Verified</span>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar bg-tertiary-container-light">A</div>
+          <div class="reviewer-meta">
+            <h4 class="reviewer-name">Amina K.</h4>
+            <span class="reviewer-tag">Verified Buyer • Sensitive / Barrier Compromised</span>
+          </div>
+          <div class="review-stars">★★★★★</div>
+        </div>
+        <p class="review-text">
+          "The ceramides have helped my damaged skin barrier so much after over-exfoliating. My face feels hydrated and calm with no burning or sting. Highly recommend for sensitive skin."
+        </p>
+        <div class="review-verification">
+          <span class="material-symbols-outlined icon-sm">verified</span>
+          <span>Clinical Results Verified</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Clinical Reviews",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow Text",
+      "default": "Evidence Based Satisfaction"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Real Results from Real Users"
+    },
+    {
+      "type": "text",
+      "id": "rating_text",
+      "label": "Rating Text",
+      "default": "Rated 4.9 / 5.0 by 12,000+ Verified Customers"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Clinical Reviews"
+    }
+  ]
+}
+{% endschema %}

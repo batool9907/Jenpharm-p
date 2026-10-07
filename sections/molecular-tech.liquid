@@ -1,0 +1,125 @@
+<!-- MOLECULAR PRECISION / ADVANCED TECHNOLOGY SECTION -->
+<section class="section section-tech bg-white" id="technology">
+  <div class="container">
+    <div class="section-header text-center">
+      <span class="section-eyebrow">{{ section.settings.eyebrow }}</span>
+      <h2 class="section-title">{{ section.settings.title }}</h2>
+      <p class="section-subtitle">
+        {{ section.settings.subtitle }}
+      </p>
+    </div>
+
+    <div class="tech-grid">
+      <!-- Left Column: 2 Features -->
+      <div class="tech-col">
+        <div class="tech-card group">
+          <div class="tech-icon-box bg-primary-fixed">
+            <span class="material-symbols-outlined text-primary">science</span>
+          </div>
+          <div class="tech-card-content">
+            <h3 class="tech-card-title">Essential Ceramides (1, 3, 6-II)</h3>
+            <p class="tech-card-text">
+              Restores the compromised natural skin barrier by replenishing essential bio-lipids lost to environmental stress, harsh cleansers, and pollution.
+            </p>
+            <span class="tech-card-metric">+74% Barrier Resistance</span>
+          </div>
+        </div>
+
+        <div class="tech-card group">
+          <div class="tech-icon-box bg-secondary-fixed">
+            <span class="material-symbols-outlined text-secondary">water_drop</span>
+          </div>
+          <div class="tech-card-content">
+            <h3 class="tech-card-title">Multi-Molecular Hyaluronic Acid</h3>
+            <p class="tech-card-text">
+              Low, medium, and high molecular weights penetrate multiple epidermal layers, locking in up to 1000x its weight in moisture without heaviness.
+            </p>
+            <span class="tech-card-metric">24H Sustained Moisture</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Center Showcase Column -->
+      <div class="tech-showcase-col">
+        <div class="tech-product-wrapper">
+          <div class="tech-ambient-glow"></div>
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCexhfGPpW-Dd1ri6UlAVmRPO9nhcBLOMMsCBTaOU-mgunWP237Mh-UCsTtO0uHiC4TM92q7Z7UEzv5VIOZxbQOA4W4EO05Fs7uO5cxxRc742CPT3C_ptxM97Ytkiuly53WYxhPbatffmDOlbSy264rHujE_efN-FcaDZQ160raUjGJLyV8HE3m6CGgdOBWa87yeWUmCMBokf25pZByLZLV3R4I5i2JHLZbxeY3iAezs7fC3lG9WVt17-peZU9epi6RIg25FKTP4A" alt="Dermive Bottle" class="tech-product-image">
+          
+          <!-- Interactive Hotspots -->
+          <button class="hotspot-pin pin-1" data-title="SPF 20 UV Shield" data-desc="Micro-fine chemical & mineral filters prevent photoaging without white cast." aria-label="SPF Hotspot">
+            <span class="hotspot-pulse"></span>
+            <span class="material-symbols-outlined">add</span>
+          </button>
+          <button class="hotspot-pin pin-2" data-title="Ceramide Matrix" data-desc="Replenishes intercellular cement to seal in moisture and repel pollutants." aria-label="Ceramide Hotspot">
+            <span class="hotspot-pulse"></span>
+            <span class="material-symbols-outlined">add</span>
+          </button>
+        </div>
+        <div class="hotspot-tooltip" id="hotspot-tooltip">
+          <h4 id="tooltip-title">Interactive Technology</h4>
+          <p id="tooltip-desc">Hover over any point to inspect our clinical ingredients.</p>
+        </div>
+      </div>
+
+      <!-- Right Column: 2 Features -->
+      <div class="tech-col">
+        <div class="tech-card group">
+          <div class="tech-icon-box bg-tertiary-fixed">
+            <span class="material-symbols-outlined text-tertiary">wb_sunny</span>
+          </div>
+          <div class="tech-card-content">
+            <h3 class="tech-card-title">Broad Spectrum SPF 20 Shield</h3>
+            <p class="tech-card-text">
+              Clinical grade UVA/UVB photo-stable filters provide daily defense against premature aging without the greasy, chalky feel of standard sunscreens.
+            </p>
+            <span class="tech-card-metric">PA+++ Photostable</span>
+          </div>
+        </div>
+
+        <div class="tech-card group">
+          <div class="tech-icon-box bg-primary-fixed">
+            <span class="material-symbols-outlined text-primary">check_circle</span>
+          </div>
+          <div class="tech-card-content">
+            <h3 class="tech-card-title">100% Non-Comedogenic & Oil Free</h3>
+            <p class="tech-card-text">
+              Formulated and certified to ensure zero follicular clogging, sebum regulation, and a shine-free velvety matte finish throughout the entire day.
+            </p>
+            <span class="tech-card-metric">0 Pore Clogging Index</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Molecular Technology",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow Text",
+      "default": "Molecular Precision"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Advanced Formula Technology"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Every molecule in Jenpharm Dermive is selected to mimic natural skin barrier lipids, ensuring maximum bio-availability and zero irritation."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Molecular Technology"
+    }
+  ]
+}
+{% endschema %}
